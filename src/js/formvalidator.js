@@ -1,8 +1,14 @@
-class FormValidator {
+export default class FormValidator {
     constructor(form) {
         this.form = form;
       }
     checkInputValidity(input) {
+        // const errUser = document.getElementById('user-name-error');
+        // const errAbout = document.getElementById('about-error');
+        const errorMessages = {
+            empty: 'Это обязательное поле',
+            wrongLength: 'Должно быть от 2 до 30 символов'
+        };
         input.setCustomValidity("");
         if (input.validity.valueMissing) {
             input.setCustomValidity(errorMessages.empty);

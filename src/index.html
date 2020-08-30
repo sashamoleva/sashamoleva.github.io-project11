@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mesto</title>
-  <link rel="stylesheet" href="./pages/index.css">
+  <!-- <link rel="stylesheet" href="./index.css"> -->
 </head>
 <body>
   <div class="root">
     <header class="header root__section">
-      <img src="./images/logo.svg" alt="mesto logo" class="logo">
+      <img src="<%= require('./images/logo.svg').default%>" alt="mesto logo" class="logo">
+      <!-- <img src="./images/logo.svg" alt="mesto logo" class="logo"> -->
     </header>
     <div class="profile root__section">
       <div class="user-info">
@@ -28,7 +29,8 @@
     </div>
     <div class="popup" id="card">
       <div class="popup__content">
-        <img src="./images/close.svg" alt="" class="popup__close">
+        <img src="<%=require('./images/close.svg').default%>" alt="" class="popup__close">
+        <!-- <img src="./images/close.svg" alt="" class="popup__close"> -->
         <h3 class="popup__title">Новое место</h3>
         <form class="popup__form" novalidate name="new">
             <input type="text" id="user-name" name="name" class="popup__input popup__input_type_name" required minlength="2" maxlength="30" placeholder="Название">
@@ -42,7 +44,8 @@
 
     <div class="popup edit" id="edit">
       <div class="popup__content">
-        <img src="./images/close.svg" alt="" class="popup__close popup__close-edit">
+        <img src="<%=require('./images/close.svg').default%>" alt="" class="popup__close popup__close-edit">
+        <!-- <img src="./images/close.svg" alt="" class="popup__close popup__close-edit"> -->
         <h3 class="popup__title">Редактировать профиль</h3>
         <form class="popup__form popup__form-edit" novalidate name="edit">
             <input type="text" id="user-name" name="username" required minlength="2" maxlength="30" class="popup__input popup__input_type_name" placeholder="Имя">
@@ -56,19 +59,21 @@
 
     <div class="popup image" id="image">
       <div class="popup__content-image">
-        <img src="./images/close.svg" alt="" class="popup__close popup__close-image">
+        <img src="<%=require('./images/close.svg').default%>" alt="" class="popup__close popup__close-image">
+        <!-- <img src="./images/close.svg" alt="" class="popup__close popup__close-image"> -->
         <img src="" alt="" class="popup__image">
       </div>
     </div>
   </div>
-  <!-- <script src="./js/data.js"></script> -->
+  <!-- <script src="./js/data.js"></script>
   <script src="./js/card.js"></script>
   <script src="./js/cardlist.js"></script>
   <script src="./js/popup.js"></script>
   <script src="./js/popupimage.js"></script>
   <script src="./js/userinfo.js"></script>
   <script src="./js/formvalidator.js"></script>
-  <script src="./js/api.js"></script>
-  <script src="./js/script.js"></script>
+  <script src="./js/api.js"></script> -->
+  <!-- <script type="module" src="./js/script.js"></script> -->
+  <!-- <script type="module" src="./index.js"></script> -->
 </body>
 </html>

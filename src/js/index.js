@@ -1,3 +1,13 @@
+import "../index.css"
+import Api from "./api.js";
+import Card from "./card.js";
+import CardList from "./cardlist.js";
+import FormValidator from "./formvalidator.js";
+import Popup from "./popup.js";
+import PopupImage from "./popupimage.js";
+import UserInfo from "./userinfo.js";
+
+
 // Переменные
 const placesList = document.querySelector('.places-list');
 const popUpCard = document.querySelector('.popup');
@@ -25,15 +35,10 @@ const { username: userName, about: userAbout } = popUpEdit.elements;
 const imagePopUpWindow = document.getElementById('image'); // поиск по id всплывающего окна картинки
 const popUpCloseButtonImage = document.querySelector('.popup__close-image'); // закрой всплыв. картинку
 const imagePop = document.querySelector('.popup__image'); // сама картинка
-// Новые переменные для валидации
-const errUser = document.getElementById('user-name-error');
-const errAbout = document.getElementById('about-error');
-const errorMessages = {
-  empty: 'Это обязательное поле',
-  wrongLength: 'Должно быть от 2 до 30 символов'
-};
+
 // Идентификаторы
-const myGroup = 'https://praktikum.tk/cohort12'
+//const myGroup = 'https://nomoreparties.co/cohort12'
+const myGroup = process.env.NODE_ENV === 'development' ? 'https://nomoreparties.co/cohort12' : 'http://nomoreparties.co/cohort12';
 const myToken = '66e40620-3796-4303-b2f9-167ae02e8c8c';
 
 //экземпляр для запроса данных пользователя

@@ -1,5 +1,4 @@
-class CardList {
-    /*ГОТОВО REVIEW. Надо исправить, если сейчас параметр  cards не используется, его не надо и задавать. */
+export default class CardList {
     constructor(container, func) {
         this.container = container;
         this.func = func;
