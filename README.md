@@ -3,4 +3,4 @@
 2. The project used technologies: CSS, HTML, GIT, JS
 3. Author: Aleksandra Moleva
 4. For what? To improve education
-5. Working version sashamoleva.github.io-project11
+5. Working version [github.com/sashamoleva/sashamoleva.github.io-project11/tree/gh-pages]
