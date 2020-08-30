@@ -38,7 +38,7 @@ const imagePop = document.querySelector('.popup__image'); // сама карти
 
 // Идентификаторы
 //const myGroup = 'https://nomoreparties.co/cohort12'
-const myGroup = process.env.NODE_ENV === 'development' ? 'http://nomoreparties.co/cohort12' : 'https://nomoreparties.co/cohort12';
+const myGroup = process.env.NODE_ENV === 'development' ? 'https://nomoreparties.co/cohort12' : 'http://nomoreparties.co/cohort12';
 const myToken = '66e40620-3796-4303-b2f9-167ae02e8c8c';
 
 //экземпляр для запроса данных пользователя
