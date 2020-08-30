@@ -6,4 +6,4 @@
     Скачайте архив с главной страницы репозитория;
     Установите в проекте webpack и необходимые компоненты командой npm install;
     Для создания финальной сборки вызывайте в консоли команду npm run build, сборки в режиме разработки – npm run dev, развертывания на сервере – npm run deploy.
-4. Рабочая версия: [github.com/sashamoleva/sashamoleva.github.io-project11]
+4. Рабочая версия: [https://sashamoleva.github.io/sashamoleva.github.io-project11]
