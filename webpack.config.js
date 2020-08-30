@@ -20,12 +20,25 @@ module.exports = {
           loader: "babel-loader"
         }
       },
-      {
-        test: /\.css$/i,
+      // {
+      //   test: /\.css$/i,
+      //   use: [
+      //                   (isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
+      //                   'css-loader', 
+      //                   'postcss-loader'
+      //           ]
+      // },
+            // {
+        {
+            test: /\.css$/i,
         use: [
                         (isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
-                        'css-loader', 
-                        'postcss-loader'
+                        {
+                          loader:'css-loader',
+                          options: {
+                              importLoaders: 2
+                          } 
+                        }
                 ]
       },
       {
